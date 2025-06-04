@@ -60,15 +60,15 @@ const NavButton = ({
               variants={item}
               href={link}
               target={newTab ? "_blank" : "_self"}
-              className="bg-white text-black w-12 h-12 text-foreground  rounded-full flex items-center justify-center
-        custom-bg
+              className="text-foreground rounded-full flex items-center justify-center 
+              bg-background/20 border border-accent/30 border-solid backdrop-blur-[6px] shadow-glass-inset hover:shadow-glass-sm 
         "
               aria-label={label}
               name={label}
               prefetch={false}
               scroll={false}
             >
-              <span className="relative  w-14 h-14 p-4 animate-spin-slow-reverse group-hover:pause hover:text-accent">
+              <span className="relative  w-14 h-14 p-4 animate-spin-slow-reverse group-hover:pause hover:text-accent peer">
                 {getIcon(icon)}
 
                 <span className="peer bg-transparent absolute top-0 left-0 w-full h-full" />

@@ -60,7 +60,7 @@ const NavButton = ({
               variants={item}
               href={link}
               target={newTab ? "_blank" : "_self"}
-              className="text-foreground  rounded-full flex items-center justify-center
+              className="bg-white text-black w-12 h-12 text-foreground  rounded-full flex items-center justify-center
         custom-bg
         "
               aria-label={label}

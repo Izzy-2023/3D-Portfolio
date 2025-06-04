@@ -1,7 +1,7 @@
 import { Github, Home, Linkedin, NotebookText, Palette, Phone, Twitter, User } from "lucide-react";
 import Link from "next/link";
 import React from "react";
-import ResponsiveComponent from "../projects/ResponsiveComponent";
+import ResponsiveComponent from "../ResponsiveComponent";
 import clsx from "clsx";
 import { motion } from "framer-motion";
 

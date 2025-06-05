@@ -1,19 +1,21 @@
-"use client"
-import React, { Suspense } from 'react';
-import { Canvas } from '@react-three/fiber';
-import clsx from 'clsx';
-import { Environment } from '@react-three/drei';
+"use client";
+import React, { Suspense } from "react";
+import { Canvas } from "@react-three/fiber";
+import clsx from "clsx";
+import { Environment } from "@react-three/drei";
 
-const RenderModel = ({children, className}) => {
+const RenderModel = ({ children, className }) => {
   return (
-    <Canvas>
-      className={clsx("w-screen h-screen -z-10 relative", className)}
-      <Suspense fallback={null}>
-        {children}
-      </Suspense>
-      <Environment preset='dawn'/>
-    </Canvas>
-  )
-}
+    <div className="absolute inset-0 -z-10 pointer-events-none">
+      <Canvas className={clsx("w-full h-full", className)}>
+        <Suspense fallback={null}>
+          {children}
+          <Environment preset="dawn" />
+        </Suspense>
+      </Canvas>
+    </div>
+  );
+};
 
-export default RenderModel
+export default RenderModel;
+

@@ -52,7 +52,7 @@ const Navigation = () => {
                 variants={container}
                 initial="hidden"
                 animate="show"
-                className="w-full px-2.5 xs:p-0 xs:w-max flex flex-col space-y-4 item-start xs:items-center justify-center relative  group xs:hidden"
+                className="w-full px-2.5 xs:p-0 xs:w-max flex flex-col space-y-4 item-start xs:items-center justify-center relative group xs:hidden"
               >
                 {BtnList.slice(0, BtnList.length / 2).map((btn) => {
                   return <NavButton key={btn.label} x={0} y={0} {...btn} />;
